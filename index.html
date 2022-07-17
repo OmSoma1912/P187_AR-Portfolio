@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>Marker based AR Portfolio</title>
+
+  <!-- Import A-Frame and then AR.js -->
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+  
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+
+  <!-- A-frame scene -->
+ <a-scene vr-mode-url = "enabled: false;" embedded arjs = "sourceType: webcam; sourceWidth: 1280; sourceHeight: 960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;">
+
+  <a-assets>
+    <img id = "birds" src = "./images/birds.jpg">
+    <img id = "car" src = "./images/car.png">
+    <img id = "carrom" src = "./images/carrom.jpg">
+    <img id = "cars" src = "./images/cars.jpg">
+    <img id = "color" src = "./images/color.png">
+    <img id = "maze" src = "./images/maze.png">
+    <img id = "paper" src = "./images/paper.jpg">
+    <img id = "parkour" src = "./images/parkour.png">
+    <img id = "pong" src = "./images/pong.png">
+    <img id = "space" src = "./images/spcae.png">
+    <img id = "tank" src = "./images/tank.png">
+    <img id = "trex" src = "./images/trex.jpg">
+  </a-assets>
+
+  <a-marker type="pattern" url="pattern-marker/virtual-flight/pattern-bird.patt"> 
+    <a-plane src="#bird" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane> 
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern-marker/virtual-flight/pattern-car.patt"> 
+    <a-plane src="#car" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane> 
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern-marker/virtual-flight/pattern-carrom.patt"> 
+    <a-plane src="#carrom" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane> 
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern-marker/virtual-flight/pattern-cars.patt"> 
+    <a-plane src="#cars" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane> 
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern-marker/virtual-flight/pattern-color.patt"> 
+    <a-plane src="#color" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane> 
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern-marker/virtual-flight/pattern-maze.patt"> 
+    <a-plane src="#maze" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane> 
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern-marker/virtual-flight/pattern-paper.patt"> 
+    <a-plane src="#paper" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane> 
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern-marker/virtual-flight/pattern-parkour.patt"> 
+    <a-plane src="#parkour" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane> 
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern-marker/virtual-flight/pattern-pong.patt"> 
+    <a-plane src="#pong" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane> 
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern-marker/virtual-flight/pattern-space.patt"> 
+    <a-plane src="#space" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane> 
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern-marker/virtual-flight/pattern-tank.patt"> 
+    <a-plane src="#tank" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane> 
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern-marker/virtual-flight/pattern-trex.patt"> 
+    <a-plane src="#trex" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane> 
+  </a-marker>
+
+ </a-scene>
+</body>
+</html>
